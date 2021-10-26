@@ -1,0 +1,10 @@
+<?php
+$conexion = new mysqli('localhost', 'root', '', 'lisboa_bd');
+//// vamos a poner un condicional para ver si se nos conecta bien a la bbdd o no, solo para pruebas:
+if ($conexion->connect_errno) {
+  //// echo 'Conexión Fallida';  ---- esto seria una posibilidad
+  die('Conexión Fallida!');
+} else {
+  echo '<h2>La base de datos LISBOA_BD se ha conectado correctamente!.</h2>';// esto solo para pruebas iniciales
+}
+?>
